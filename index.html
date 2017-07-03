@@ -1,51 +1,109 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" name="description" content="This is a page about the ancient Hungarian Austrian dish poppy seed noodles, also known as Mohnnudeln, and the recipe for making it.">
     <title>Sean O'Reilly Recipe</title>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-12345678-9', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <script type="text/javascript" src="./external.js"/>
+    <link rel="stylesheet" href="./style.css" type="text/css">
   </head>
   <body>
+    <header>
+      <img src="https://1871.com/wp-content/uploads/2016/09/App-Academy-logo.jpeg" alt="App Academy Logo">
+      <nav>
+        <ul>
+          <li><a href="#description">Description</a></li>
+          <li><a href="#ingredients">Ingredients</a></li>
+          <li><a href="#directions">Directions</a></li>
+        </ul>
+      </nav>
+      <aside>
+        <h2 id="ingredients">Ingredients</h2>
+        <ul>
+          <li>2 cups of egg/potato noodles</li>
+          <li>2 tablespoons unsalted butter</li>
+          <li>1/4 teaspoon salt(or however much you want really)</li>
+          <li>1 1/4  cup poppyseeds</li>
+          <li>1/4 cup sugar</li>
+          <li>however much ground black pepper you want too</li>
+        </ul>
+      </aside>
+    </header>
 
     <h2>Poppy Seed Noodles</h2>
 
-    <ul>
-      <li><a href="#description">Description</a></li>
-      <li><a href="#ingredients">Ingredients</a></li>
-      <li><a href="#directions">Directions</a></li>
-    </ul>
+    <section>
+      <figure>
+        <img src="http://zserbo.com/wp-content/uploads/2016/09/Poppy-seed-noodles.jpg" alt="A plate of poppy seed noodles.">
+        <figcaption>
+          <a href="https://en.wikipedia.org/wiki/Mohnnudel">WIKI</a>
+        </figcaption>
+      </figure>
 
-    <img src="http://zserbo.com/wp-content/uploads/2016/09/Poppy-seed-noodles.jpg" alt="A plate of poppy seed noodles.">
+      <h2 id="description">Description</h2>
 
-    <h2 id="description">Description</h2>
+      <p>Mohnnudeln (meaning poppy seed noodles in German), is the name of thick noodles of a potato dough in Bohemian and Austrian cuisine, similar to the Schupfnudel. The main difference is, that Mohnnudeln are served with melted butter, ground poppy seeds, and sprinkled with confectioner's sugar.</p>
 
-    <p>Mohnnudeln (meaning poppy seed noodles in German), is the name of thick noodles of a potato dough in Bohemian and Austrian cuisine, similar to the Schupfnudel. The main difference is, that Mohnnudeln are served with melted butter, ground poppy seeds, and sprinkled with confectioner's sugar.</p><a href="https://en.wikipedia.org/wiki/Mohnnudel">[WIKI]</a>
+      <h2 id="directions">Directions</h2>
 
+      <ol>
+        <li>Place noodles in pot with water</li>
+        <li>Cook noodles</li>
+        <li>Grind poppy seeds and sugar in small coffe grinder, be sure
+        to scrape sides</li>
+        <li>Place drained noodles in warmed bowl</li>
+        <li>Add poppy seeds, sugar, salt, and pepper to melted butter</li>
+        <li>Pour over noodles</li>
+        <li>Taste the Hungarian tradition!!!</li>
+      </ol>
+    </section>
+    <section id="reviews">
+      <form id="review-form" action="/reviews" method="post">
 
+        <label for="name">Name: </label>
+        <input type="text" id="name">
 
-    <h2 id="ingredients">Ingredients</h2>
+        <br>
 
-    <ul>
-      <li>2 cups of egg/potato noodles</li>
-      <li>2 tablespoons unsalted butter</li>
-      <li>1/4 teaspoon salt(or however much you want really)</li>
-      <li>1 1/4  cup poppyseeds</li>
-      <li>1/4 cup sugar</li>
-      <li>however much ground black pepper you want too</li>
-    </ul>
+        <label>Rating: </label>
+        1 <input type="radio" checked value="1">
+        2 <input type="radio" value="2">
+        3 <input type="radio" value="3">
+        4 <input type="radio" value="4">
+        5 <input type="radio" value="5">
 
-    <h2 id="directions">Directions</h2>
+        <br>
 
-    <ol>
-      <li>Place noodles in pot with water</li>
-      <li>Cook noodles</li>
-      <li>Grind poppy seeds and sugar in small coffe grinder, be sure
-      to scrape sides</li>
-      <li>Place drained noodles in warmed bowl</li>
-      <li>Add poppy seeds, sugar, salt, and pepper to melted butter</li>
-      <li>Pour over noodles</li>
-      <li>Taste the Hungarian tradition!!!</li>
-    </ol>
+        <label for="expertise">Cooking Expertise: </label>
+        <select id="expertise">
+          <option value="" selected disabled>Select Cooking Expertise</option>
+          <option value="">Sometimes Cook</option>
+          <option value="">Cook Everyday</option>
+          <option value="">Cooking is a Hobby</option>
+          <option value="">Professional Chef</option>
+        </select>
 
-    <!-- original recipe by ratherbeswimmin http://www.food.com/recipe/poppy-seed-noodles-180273 -->
+        <br>
+
+        <label>Review:<br><textarea rows="8" cols="80"></textarea></label>
+        <input type="submit" value="Submit">
+
+      </form>
+    </section>
+
+    <footer>
+      <p>original recipe by
+        <a href="http://www.food.com/recipe/poppy-seed-noodles-180273">ratherbeswimmin</a>
+      </p>
+    </footer>
   </body>
 </html>
