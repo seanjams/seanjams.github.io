@@ -1,9 +1,17 @@
 html {
-  background-color: #AAFFAA;
+  background-color: #FFF4FF;
 }
 
 body {
   font-family: "Arial, sans-serif";
+}
+
+.section {
+  height: 300px;
+}
+
+h1, h2 {
+  
 }
 
 header {
