@@ -1,3 +1,3 @@
 # seanjams.github.io
 
-[View me here](seanjams.github.io)
+[View me here](https://seanjams.github.io)

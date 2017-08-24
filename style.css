@@ -6,27 +6,10 @@ body {
   font-family: "Arial, sans-serif";
 }
 
-h1 {
-  font-size: 38px;
+header {
+
 }
 
-h2 {
-  font-size: 32px;
-}
+footer {
 
-.ingredients-list {
-  list-style: square inside;
-}
-
-.directions-list {
-  list-style:  upper-roman;
-}
-
-header > img {
-  width: 100px;
-}
-
-ul li a {
-  color: inherit;
-  text-decoration: none;
 }
