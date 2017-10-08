@@ -1,5 +1,4 @@
-html, body, header, section, footer, a, h1, h2, h3, h4, img, nav, aside, ul, ol,
-li, figure, figcaption, p, form, label {
+html, body, header, section, footer, a, h1, h2, h3, h4, img, nav, aside, ul, ol, figure, figcaption, p, form, label {
   margin: 0;
   padding: 0;
   border: 0;
@@ -7,4 +6,29 @@ li, figure, figcaption, p, form, label {
   font: inherit;
   vertical-align: baseline;
   list-style: none;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+strong {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.7em;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+h4 {
+  font-size: 1em;
 }
