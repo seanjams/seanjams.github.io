@@ -1,3 +1,3 @@
 # seanjams.github.io
 
-[View me here](www.seanoreilly.co)
+[View me here](http://www.seanoreilly.co)
