@@ -1,0 +1,51 @@
+.body-container {
+  margin: 0 auto;
+  padding: 2em;
+  max-width: 50em;
+  /*color: #2c344c;*/
+}
+
+.project-item {
+  margin: 2em 0;
+}
+
+.project-item h3 {
+  display: inline-block;
+}
+
+.project-item ul {
+  list-style: circle;
+  list-style-position: inside;
+  padding-left: 1em;
+}
+
+.project-item p {
+  /*padding-left: 1em;*/
+  margin-bottom: 1em;
+}
+
+#skills ul {
+  display: flex;
+  flex-flow: wrap;
+  margin: 2em 0;
+  padding-left: 1em;
+}
+
+#skills li {
+  display: inline-block;
+  width: 200px;
+}
+
+.experience-item {
+  margin: 2em 0;
+}
+
+.experience-item ul {
+  list-style: circle;
+  list-style-position: inside;
+  padding-left: 1em;
+}
+
+.education-item {
+  margin: 2em 0;
+}

@@ -1,0 +1,31 @@
+header {
+  background: #0f483b;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 50em;
+  margin: 0 auto;
+  transition: 0.2s;
+  padding-top: 6.5em;
+}
+
+.nav-container li {
+  display: inline-block;
+  margin-left: 0.5em;
+  font-size: 1.5em;
+
+}
+
+.nav-container a,
+.nav-container h1 {
+  /*white*/
+  color: #dfdfdf;
+  transition-duration: 0.2s;
+}
+
+.nav-container a:hover {
+  /*red*/
+  color: #ba4b66;
+}
