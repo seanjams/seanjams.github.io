@@ -2,7 +2,6 @@
   margin: 0 auto;
   padding: 2em;
   max-width: 50em;
-  /*color: #2c344c;*/
 }
 
 .project-item {
@@ -27,13 +26,12 @@
 #skills ul {
   display: flex;
   flex-flow: wrap;
-  margin: 2em 0;
-  padding-left: 1em;
+  margin: 2em 1em;
 }
 
 #skills li {
   display: inline-block;
-  width: 200px;
+  width: 12em;
 }
 
 .experience-item {
