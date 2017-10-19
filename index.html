@@ -31,42 +31,71 @@
       </div>
     </header>
     <div class="body-container">
+      <h3 id="subtitle">Software Developer</h3>
+      <div class="section" id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li><span>○</span> Javascript</li>
+          <li><span>○</span> React/Redux</li>
+          <li><span>○</span> Node.js</li>
+          <li><span>○</span> Ruby/Rails</li>
+          <li><span>○</span> PostgreSQL</li>
+          <li><span>○</span> MongoDB</li>
+          <li><span>○</span> HTML5/CSS3</li>
+          <li><span>○</span> React Native</li>
+        </ul>
+      </div>
       <div class="section" id="projects">
         <h2>Projects</h2>
         <ul>
           <li class="project-item">
-            <h3>Scalar</h3>
-            <a class="project-link" href="http://www.seanoreilly.co/Scalar">Live</a>
-            <a class="project-link" href="https://github.com/seanjams/Scalar">Github</a>
-            <h4>(Javascript, React, Web Audio API, HTML5/CSS)</h4>
-            <p>Web Application designed for guitarists and pianists, allowing users to hear and visualize chords and scales on both instruments simultaneously</p>
-            <ul>
-              <li>Produced sounds for piano keys by manipulating the frequencies of Web Audio API oscillators</li>
-              <li>Created and styled interactive piano keys, guitar fretboard, and musical clock connected by React.js</li>
-            </ul>
+            <div class="project-info-container">
+              <h3>Scalar</h3>
+              <a class="project-link" href="http://www.seanoreilly.co/Scalar">Live</a>
+              <a class="project-link" href="https://github.com/seanjams/Scalar">Github</a>
+              <h4>(Javascript, React, Web Audio API, HTML5/CSS)</h4>
+              <p>Web Application designed for guitarists and pianists, allowing users to hear and visualize chords and scales on both instruments simultaneously</p>
+              <ul>
+                <li>Produced sounds for piano keys by manipulating the frequencies of Web Audio API oscillators</li>
+                <li>Created and styled interactive piano keys, guitar fretboard, and musical clock connected by React.js</li>
+              </ul>
+            </div>
+            <a class="image-link" href="http://www.seanoreilly.co/Scalar">
+              <img src="assets/images/keys_demo.gif" alt="Scalar Demo">
+            </a>
           </li>
           <li class="project-item">
-            <h3>CityImpact</h3>
-            <a class="project-link" href="http://cityimpact.us/">Demo</a>
-            <a class="project-link" href="https://github.com/jonathanlofton/CityImpact">Github</a>
-            <h4>(React Native, Node, Express, Mongo, Passport, HTML5/CSS)</h4>
-            <p>iOS/Android Mobile application where users can host neighborhood events with a mission to help bring communities together, built in collaboration</p>
-            <ul>
-              <li>Constructed backend with MongoDB and Express.js, working with frontend team to design and process all necessary API requests</li>
-              <li>Added session-persisting Facebook and Google authentication with Passport.js</li>
-            </ul>
+            <div class="project-info-container">
+              <h3>CityImpact</h3>
+              <a class="project-link" href="http://cityimpact.us/">Demo</a>
+              <a class="project-link" href="https://github.com/jonathanlofton/CityImpact">Github</a>
+              <h4>(React Native, Node, Express, Mongo, Passport, HTML5/CSS)</h4>
+              <p>iOS/Android Mobile application where users can host neighborhood events with a mission to help bring communities together, built in collaboration</p>
+              <ul>
+                <li>Constructed backend with MongoDB and Express.js, working with frontend team to design and process all necessary API requests</li>
+                <li>Added session-persisting Facebook and Google authentication with Passport.js</li>
+              </ul>
+            </div>
+            <a href="http://cityimpact.us/">
+              <iframe src="https://giphy.com/embed/3oEhmUW0eUbzCxALsc" width="133" height="240" frameBorder="0"></iframe>
+            </a>
           </li>
           <li class="project-item">
-            <h3>NodeItAll</h3>
-            <a class="project-link" href="https://www.nodeitall.co/">Live</a>
-            <a class="project-link" href="https://github.com/seanjams/NodeItAll">Github</a>
-            <h4>(React/Redux, Ruby on Rails, React-Highlight, PostgreSQL, HTML5/CSS/SASS)</h4>
-            <p>Full stack web application inspired by Stack Overflow where users can ask, answer, and vote on tech-related questions</p>
-            <ul>
-              <li>Used polymorphic ActiveRecord associations in Rails to save votes for multiple item types(Questions/Answers) in a single table, improving efficiency of DB queries</li>
-              <li>Designed question/answer response form using React-Highlight.js, allowing submission of code boxes with syntax highlighting in a variety of coding languages</li>
-              <li>Implemented frontend and backend authentication, search bar, and keyword filters</li>
-            </ul>
+            <div class="project-info-container">
+              <h3>NodeItAll</h3>
+              <a class="project-link" href="https://www.nodeitall.co/">Live</a>
+              <a class="project-link" href="https://github.com/seanjams/NodeItAll">Github</a>
+              <h4>(React/Redux, Ruby on Rails, React-Highlight, PostgreSQL, HTML5/CSS/SASS)</h4>
+              <p>Full stack web application inspired by Stack Overflow where users can ask, answer, and vote on tech-related questions</p>
+              <ul>
+                <li>Used polymorphic ActiveRecord associations in Rails to save votes for multiple item types(Questions/Answers) in a single table, improving efficiency of DB queries</li>
+                <li>Designed question/answer response form using React-Highlight.js, allowing submission of code boxes with syntax highlighting in a variety of coding languages</li>
+                <li>Implemented frontend and backend authentication, search bar, and keyword filters</li>
+              </ul>
+            </div>
+            <a class="image-link" href="https://www.nodeitall.co/">
+              <img src="assets/images/new_question.gif" alt="">
+            </a>
           </li>
         </ul>
       </div>
@@ -74,7 +103,10 @@
         <h2>Education</h2>
         <ul>
           <li class="education-item">
-            <h3>University of California, Davis - June 2015</h3>
+            <div id="ucdavis-container">
+              <h3>University of California, Davis - June 2015</h3>
+              <a href="assets/CanYouHearGroupTheoryInMusic.pdf">Can You Hear Group Theory In Music?</a>
+            </div>
             <p>B.S. in Applied Mathematics with 3.33 GPA</p>
           </li>
           <li class="education-item">
@@ -83,20 +115,6 @@
           </li>
         </ul>
       </div>
-      <div class="section" id="skills">
-        <h2>Skills</h2>
-        <ul>
-          <li>○ Javascript</li>
-          <li>○ React/Redux</li>
-          <li>○ Node.js</li>
-          <li>○ Ruby/Rails</li>
-          <li>○ PostgreSQL</li>
-          <li>○ MongoDB</li>
-          <li>○ HTML5/CSS3</li>
-          <li>○ React Native</li>
-        </ul>
-      </div>
-
       <div class="section" id="experience">
         <h2>Experience</h2>
         <ul>
@@ -134,17 +152,5 @@
         </ul>
       </div>
     </div>
-
-    <footer>
-
-    </footer>
   </body>
 </html>
-
-<!-- SEAN O’REILLY
-916-862-0882
-seanvoreilly2@gmail.com
-https://github.com/seanjams
-https://www.linkedin.com/in/seanvoreilly
-
--->

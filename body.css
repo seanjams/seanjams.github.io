@@ -1,57 +1,79 @@
 .body-container {
   margin: 0 auto;
-  padding: 2em;
+  padding: 0.3em 2em;
   max-width: 50em;
 }
 
-.project-item {
-  margin: 2em 0;
+
+#subtitle {
+  color: #0f483b;
+  font-weight: bold;
 }
 
-.project-item h3 {
-  display: inline-block;
-}
-
-.project-item ul {
-  list-style: circle;
-  list-style-position: inside;
-  padding-left: 1em;
-}
-
-.project-item p {
-  /*padding-left: 1em;*/
-  margin-bottom: 1em;
-}
-
-.project-link {
-  margin-left: 0.5em;
-}
 
 #skills ul {
   display: flex;
   flex-flow: wrap;
   margin: 2em 1em;
 }
-
 #skills li {
   display: inline-block;
   width: 12em;
 }
+#skills li span {
+  margin: 0 1em;
+}
+
+
+.project-item {
+  margin: 2em 0;
+  display: flex;
+  align-items: center;
+}
+
+
+.image-link {
+  width: 40%;
+  margin-left: 2em;
+}
+.image-link img {
+  width: 100%;
+}
+
+
+.project-info-container {
+  flex: 2;
+}
+.project-info-container h3 {
+  display: inline-block;
+}
+.project-info-container ul {
+  list-style: circle;
+  list-style-position: inherit;
+  padding-left: 1em;
+}
+.project-info-container p {
+  margin-bottom: 1em;
+}
+.project-link {
+  margin-left: 0.5em;
+}
+
+
+.education-item {
+  margin: 2em 0;
+}
+#ucdavis-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 
 .experience-item {
   margin: 2em 0;
 }
-
 .experience-item ul {
   list-style: circle;
   list-style-position: inside;
   padding-left: 1em;
 }
-
-.education-item {
-  margin: 2em 0;
-}
-
-/*.education-item p {
-  padding-left: 1em;
-}*/
