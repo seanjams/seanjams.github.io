@@ -23,6 +23,10 @@
   margin-bottom: 1em;
 }
 
+.project-link {
+  margin-left: 0.5em;
+}
+
 #skills ul {
   display: flex;
   flex-flow: wrap;
