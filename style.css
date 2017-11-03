@@ -22,18 +22,6 @@ h4 {
   padding-bottom: 0.5em;
 }
 
-a {
-  /*light green*/
-  color: #28c5a0;
-  display: inline-block;
-  transition-duration: 0.2s;
-}
-
-a:hover {
-  /*red*/
-  color: #ba4b66;
-}
-
 iframe {
   margin-left: 2em;
   pointer-events: none;

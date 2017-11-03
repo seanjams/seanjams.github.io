@@ -1,3 +1,5 @@
 # seanjams.github.io
 
-[View me here](http://www.seanoreilly.co)
+11 / 2017 - Under Construction
+
+[Check Out Resume Site](http://www.seanoreilly.co/Resume)
