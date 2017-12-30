@@ -1,0 +1,32 @@
+html, body {
+  padding: 0;
+  margin: 1em 2em;
+  max-width: 50em;
+  font-family: -apple-system, "Helvetica", "Arial", sans-serif;
+  color: #444;
+  tab-size: 4;
+}
+
+#title {
+  font-size: 2em;
+}
+
+#links a {
+  font-size: 1.3em;
+  color: #F0F;
+  text-decoration: none;
+}
+
+.project-item {
+  max-width: 30em;
+  margin: 2em 0;
+}
+
+.project-item h1 {
+  font-size: 1.3em;
+}
+
+.project-item img {
+  margin: 0.5em 0;
+  max-width: 30em;
+}
