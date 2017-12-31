@@ -1,5 +1,5 @@
 # seanjams.github.io
 
-11 / 2017 - Under Construction
+[Live](http://www.seanoreilly.co/)
 
-[Check Out Resume Site](http://www.seanoreilly.co/Resume)
+Last Update 12/30/2017
