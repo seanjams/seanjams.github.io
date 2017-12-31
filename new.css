@@ -1,32 +1,74 @@
-html, body {
+html {
   padding: 0;
-  margin: 1em 2em;
-  max-width: 50em;
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  padding: 0;
+  margin: 1em 4em;
+  max-width: 35em;
   font-family: -apple-system, "Helvetica", "Arial", sans-serif;
+  background: #dee;
   color: #444;
   tab-size: 4;
 }
 
-#title {
-  font-size: 2em;
+a {
+  color: #88A;
+  text-decoration: none;
+  transition: color 0.2s;
 }
 
-#links a {
-  font-size: 1.3em;
+a:hover {
   color: #F0F;
   text-decoration: none;
 }
 
+#title {
+  font-size: 2.8em;
+}
+
+#links a {
+  font-size: 1.1em;
+}
+
 .project-item {
-  max-width: 30em;
-  margin: 2em 0;
+  margin: 1em 0;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+.title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .project-item h1 {
   font-size: 1.3em;
+  display: inline-block;
+}
+
+.project-item p {
+  margin: 0.5em 0;
+  color: #666;
 }
 
 .project-item img {
-  margin: 0.5em 0;
-  max-width: 30em;
+  border-radius: 3px;
+  box-shadow: 1px 1px 4px #666;
+  max-width: 100%;
+  width: 100%;
+  transition: box-shadow 0.2s;
+}
+
+.project-item img:hover {
+  box-shadow: 1px 1px 10px #666;
+}
+
+@media (max-width: 600px) {
+  body {
+    margin: 1em 2em;
+  }
 }
