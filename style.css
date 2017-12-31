@@ -1,45 +1,82 @@
+html {
+  padding: 0;
+  margin: 0;
+}
+
 body {
-  /*white*/
-  background: #eeeeee;
-  /*light-gray*/
-  color: #666;
-  font-family: 'Lato', sans-serif;
+  line-height: 1.5;
+  padding: 0;
+  margin: 1em 4em;
+  max-width: 35em;
+  background: #d6efef;
+  color: #334;
+  tab-size: 4;
+  font-family: 'Quicksand', sans-serif;
 }
 
-h1,
-h2,
-h3,
-strong {
-  font-weight: bold;
+a {
+  color: #88A;
+  text-decoration: none;
+  transition: color 0.2s;
 }
 
-h1, h2, h3, h4 {
-  /*dark gray*/
-  color: #333;
+a:hover {
+  color: #97F;
 }
 
-h1 {
-  font-size: 2.5em;
+.bullet {
+  margin: 0 0.25em;
 }
 
-h2 {
-  font-size: 1.7em;
-  margin-top: 1em;
-  padding-top: 1em;
-  border-bottom: 1px solid #333;
+#name {
+  font-size: 2.8em;
 }
 
-h3 {
-  font-size: 1.3em;
+#links {
+  display: flex;
+  justify-content: space-between;
+  max-width: 22em;
 }
 
-h4 {
-  font-size: 1em;
-  margin-bottom: 0.5em;
-  padding-bottom: 0.5em;
+#links a {
+  font-size: 1.1em;
 }
 
-iframe {
-  margin-left: 2em;
-  pointer-events: none;
+.project-item {
+  margin: 1em 0;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+.title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.title {
+  font-size: 1.5em;
+}
+
+.project-item p {
+  margin: 1em 0;
+  color: #556;
+}
+
+.project-item img {
+  border-radius: 3px;
+  box-shadow: 1px 1px 4px #556;
+  width: 100%;
+  max-width: 100%;
+  transition: box-shadow 0.2s;
+}
+
+.project-item img:hover {
+  box-shadow: 1px 1px 10px #556;
+}
+
+@media (max-width: 600px) {
+  body {
+    margin: 1em 2em;
+  }
 }
