@@ -6,7 +6,7 @@ html {
 body {
 	line-height: 1.5;
 	padding: 0;
-	margin: 1em 4em;
+	margin: 1em auto;
 	max-width: 35em;
 	background: #dafafa;
 	color: #334;
@@ -30,12 +30,14 @@ a:hover {
 
 #name {
 	font-size: 2.8em;
+	text-align: center;
 }
 
 #links {
 	display: flex;
 	justify-content: space-between;
 	max-width: 22em;
+	margin: 0 auto;
 }
 
 #links a {
@@ -79,5 +81,17 @@ a:hover {
 @media (max-width: 600px) {
 	body {
 		margin: 1em;
+	}
+
+	#name {
+		text-align: left;
+	}
+
+	#links {
+		margin: 0;
+	}
+
+	.title {
+		max-width: 9em;
 	}
 }
