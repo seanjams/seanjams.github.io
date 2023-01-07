@@ -66,8 +66,9 @@ a:hover {
 	color: #556;
 }
 
-.project-item img {
-	border-radius: 3px;
+.project-item img,
+.project-item video {
+	border-radius: 5px;
 	box-shadow: 1px 1px 8px #556;
 	width: 100%;
 	max-width: 100%;
