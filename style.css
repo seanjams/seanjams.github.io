@@ -7,7 +7,7 @@ body {
 	line-height: 1.5;
 	padding: 0;
 	margin: 1em auto;
-	max-width: 35em;
+	max-width: calc(1200px + 2 * 2 * 3em);
 	background: #dafafa;
 	color: #334;
 	tab-size: 4;
@@ -24,6 +24,26 @@ a:hover {
 	color: #ee8036;
 }
 
+svg {
+	height: 24px;
+	width: 24px;
+}
+
+a#linkedin svg {
+	height: 34px;
+	width: 34px;
+	margin: 0 -6px;
+}
+
+svg path {
+	stroke-width: 0;
+	transition: fill 0.2s;
+}
+
+svg:hover path {
+	fill: #ee8036;
+}
+
 .bullet {
 	margin: 0 0.25em;
 }
@@ -36,18 +56,16 @@ a:hover {
 #links {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	max-width: 22em;
 	margin: 0 auto;
 }
 
 #links a {
 	font-size: 1.1em;
-}
-
-.project-item {
-	margin: 1em 0;
-	padding: 0.5em;
-	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .title-container {
@@ -59,11 +77,27 @@ a:hover {
 .title {
 	font-size: 1.5em;
 	max-width: 14em;
+	font-weight: bold;
+}
+
+.projects {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.project-item {
+	margin: 1em 0;
+	flex-basis: calc(50% - 2 * 3em);
+	padding: 1em 3em;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
 }
 
 .project-item p {
 	margin: 1em 0;
 	color: #556;
+	flex-grow: 1;
 }
 
 .project-item img,
@@ -79,17 +113,28 @@ a:hover {
 	box-shadow: 1px 1px 14px #556;
 }
 
-@media (max-width: 600px) {
+@media (max-width: calc(1200px + 2 * 2 * 3em - 1px)) {
+	body {
+		max-width: calc(600px + 2 * 2 * 0.5em);
+	}
+
+	.projects {
+		display: flex;
+		width: 100%;
+		flex-flow: column nowrap;
+		align-items: center;
+	}
+
+	.project-item {
+		flex-basis: calc(50% - 2 * 0.5em);
+		padding: 1em 0.5em;
+	}
+}
+
+@media (max-width: calc(600px + 2 * 2 * 0.5em - 1px)) {
 	body {
 		margin: 1em;
-	}
-
-	#name {
-		text-align: left;
-	}
-
-	#links {
-		margin: 0;
+		max-width: 100%;
 	}
 
 	.title {
